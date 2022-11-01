@@ -1,0 +1,5 @@
+User-agen: Googlebot
+
+Allow: /*.jpg
+Allow: /*.html
+Disallow: privat.html
