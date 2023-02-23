@@ -22,11 +22,13 @@ public class Escola {
 
     }
 
-    public Usuari [] llistarUsuari (){
+    public Usuari [] llistaUsuari (){
         Usuari [] usuaris = new Usuari[darrer];
         //emplenar array amb els usuaris
-        return this.usuaris;
+        for (int i= 0 ; i < usuaris.length; i++){
+            usuaris[i] = this.usuaris[i];
+        }
+        return usuaris;
     }
-
 
 }

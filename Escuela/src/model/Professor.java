@@ -4,16 +4,18 @@ public class Professor extends Usuari { //solo se puede utilizar la herencia cua
     private Usuari usuari;
     private String especialitat;
     private String departament;
+    private Treballador treballador;
 
 
     //model.Professor.getUsuari().getNom();
     //model.Professor.getNom();
 
 
-    public Professor(String dni, String nom, String cognom1, String cognom2, String email, String especialitat, String departament) {
+    public Professor(/*Treballador t*/String dni, String nom, String cognom1, String cognom2, String email, String especialitat, String departament) {
         super(dni, nom, cognom1, cognom2, email);
         this.especialitat = especialitat;
         this.departament = departament;
+        //this.treballador = t;
     }
 
     public String getEspecialitat() {
@@ -31,4 +33,13 @@ public class Professor extends Usuari { //solo se puede utilizar la herencia cua
     public void setDepartament(String departament) {
         this.departament = departament;
     }
+
+    /*public void horesSuport (){
+        float nomina= this.treballador.calcularNomina();
+        if (nomina<2000){
+            return 2;
+        }
+
+    }*/
+
 }
